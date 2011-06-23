@@ -59,7 +59,7 @@ class LinksController < ApplicationController
     @link.destroy
 
     respond_to do |format|
-      format.html { redirect_to @person,:notice => "#{@link.name} was deleted." }
+      format.html { redirect_to @person, :notice => "#{@link.name} was deleted." }
       format.xml  { head :ok }
     end
   end

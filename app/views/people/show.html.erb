@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= @person.name %></h3>
+<p>
+  <b>Location:</b>
+  <%= @person.location %>
+</p>
+
+<ul class="show-link">
+<%= render :partial => 'links/icon',
+           :collection => @person.links %>
+</ul>
+
+
+<%= link_to 'Add New Link', new_person_link_path(@person) %> |
+<%= link_to 'See Everyone Else', people_path %>

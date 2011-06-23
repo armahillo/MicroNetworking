@@ -1,0 +1,7 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+twitter:
+  type_name: Twitter
+
+email:
+  type_name: E-mail

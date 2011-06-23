@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+web_link:
+  name: Twitter
+  url: http://www.twitter.com
+  person: normal_user
+  link_type: twitter  
+
+email_link:
+  name: armahillo@gmail.com
+  url: armahillo@gmail.com
+  person: normal_user
+  link_type: email

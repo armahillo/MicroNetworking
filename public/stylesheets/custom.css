@@ -1,0 +1,63 @@
+a:hover {
+  background-color: none;
+}
+ul.home-link .link {
+  text-indent: -9999em;
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  padding: 4px;
+}
+
+ul.show-link .link {
+  margin: 0;
+  padding: 0; 
+  padding-left: 48px;
+  height: 36px;
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+}
+ul.show-link li, ul.home-link li {
+  list-style: none;
+}
+ul.home-link li .oops { display: none; }
+
+a.link:hover {
+  background-color: none;
+}
+
+.twitter {
+  background: url('/images/twitter.png') no-repeat;
+}
+.facebook {
+  background: url('/images/facebook.png') no-repeat;
+}
+.website {
+  background: url('/images/website.png') no-repeat;
+}
+.e-mail {
+  background: url('/images/email.png') no-repeat;
+}
+.tumblr {
+  background: url('/images/tumblr.png') no-repeat;
+}
+.blog {
+  background: url('/images/blog.png') no-repeat;
+}
+.linkedin {
+  background: url('/images/linkedin.png') no-repeat;
+}
+
+.container {
+  position: relative;
+}
+body {
+}
+
+#hat {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

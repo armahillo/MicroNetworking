@@ -1,0 +1,1 @@
+<li><a class="link <%= icon.link_type.type_name.downcase.gsub(/\s/,'_') %>" href="<%= icon.url %>" title="<%= icon.name %>"><%= icon.name %></a> <span class="oops">(<%= link_to 'oops', edit_person_link_path(icon.person.id, icon.id) %>)</span></li>

@@ -1,0 +1,21 @@
+<h2>Nerds</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Links</th>
+  </tr>
+
+<% @people.each do |person| %>
+  <tr>
+    <td><%= link_to person.name, person_path(person) %></td>
+    <td><%= person.location %></td>
+    <td><ul class="home-link"><%= render :partial => 'links/icon', :collection => person.links  %></ul></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add Yourself', new_person_path %>

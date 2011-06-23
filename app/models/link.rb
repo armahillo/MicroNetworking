@@ -6,7 +6,7 @@ class Link < ActiveRecord::Base
   validate :url_is_valid
 
   def url_is_valid
-    url_re = Regexp.new(/^http:\/\/[\d|\w]+\.[\w|\d]+.*/)
+    url_re = Regexp.new(/^http[s]?:\/\/[\d|\w]+\.[\w|\d]+.*/)
     email_re = Regexp.new(/^[^@]+@[^@]+/i)
     mailto_re = Regexp.new(/^mailto:/i)
     

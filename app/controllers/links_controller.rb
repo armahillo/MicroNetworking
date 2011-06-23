@@ -30,7 +30,7 @@ class LinksController < ApplicationController
         format.html { redirect_to(@person, :notice => 'Link was successfully created.') }
         format.xml  { render :xml => @link, :status => :created, :location => @link }
       else
-        format.html { render :action => "new" }
+        format.html { @types = LinkType.all; render :action => "new" }
         format.xml  { render :xml => @link.errors, :status => :unprocessable_entity }
       end
     end
@@ -59,7 +59,7 @@ class LinksController < ApplicationController
     @link.destroy
 
     respond_to do |format|
-      format.html { redirect_to(links_url) }
+      format.html { redirect_to @person,:notice => "#{@link.name} was deleted." }
       format.xml  { head :ok }
     end
   end

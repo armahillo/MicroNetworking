@@ -12,8 +12,10 @@ class Link < ActiveRecord::Base
     
     #ditch the mailto first
     self.url.gsub(mailto_re, '')
+
+    mailtype = LinkType.find(7) #hacky -- just get the mail type
     
-    unless self.url.match(url_re) || self.url.match(email_re)
+    unless self.url.match(url_re) || (self.url.match(email_re) and self.link_type_id == mailtype.id)
       @errors.add(:url, "must be a valid URL or email address")
     end
   end

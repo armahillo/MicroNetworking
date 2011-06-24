@@ -10,4 +10,9 @@ module ApplicationHelper
   #  end
   end
 
+  def authorized?
+    !session[:authorized].nil? and session[:authorized] == true
+  end
+
+
 end

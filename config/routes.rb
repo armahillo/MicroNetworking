@@ -1,6 +1,11 @@
 BnrAmhillNet::Application.routes.draw do
   root :to => 'people#index'
 
+  get 'signin' => 'session#new'
+  post 'signin' => 'session#create'
+  delete 'signout' => 'session#destroy'
+
+
   resources :people do
     resources :links
   end
